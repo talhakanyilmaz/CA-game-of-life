@@ -41,13 +41,13 @@ while(True):
     for i in list(range(1,39)):
         for j in list(range(1,79)):
             if(i == 1):
-                current_matrix[i][j] = ' '
+                next_matrix[i][j] = ' '
             elif(i == 38):
-                current_matrix[i][j] = ' '
+                next_matrix[i][j] = ' '
             elif(j == 1):
-                current_matrix[i][j] = ' '
+                next_matrix[i][j] = ' '
             elif(j == 78):
-                current_matrix[i][j] = ' '
+                next_matrix[i][j] = ' '
             else:
                 alive = adjacent_counter(i,j)
                 if(current_matrix[i][j] == ' '):
